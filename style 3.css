@@ -1,0 +1,144 @@
+/*стиль шрифта Inter скачать с сайта Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+font-family: "Inter", sans-serif;
+max-width: 1440px;
+margin: 0 auto;
+padding: 58px 80px;
+}
+
+header {
+display: flex; 
+justify-content: space-between; 
+align-items: center;  
+}
+
+
+
+.logotip, 
+header nav a, 
+.foto-about,
+.foto-details,
+.foto-card figcaption,
+footer h2 {
+color:black;
+text-decoration: none;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+}
+
+header nav{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+header button, .foto-glav button{
+ background: black;  
+ color: white; 
+ width: 100px;
+ height: 50px;
+ border-radius: 10px;
+ border: none;
+ cursor: pointer;
+ font-size: 16px;
+ font-weight: 500;
+}
+
+.foto, .foto-card{
+    margin: 60px 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.foto-glav{
+ display: flex;
+ flex-direction: column; 
+ gap: 24px; 
+ max-width: 515px; 
+}
+
+h1{
+ font-size: 40px;  
+ font-weight: 600;
+ line-height: 110%;
+}
+
+.foto-glav h4, 
+foto-price,
+h2,
+.footer-info h2{
+ font-size: 24px;
+  line-height: 150%;  
+}
+
+.foto-glav h4, 
+.foto-details,
+.product-about{
+color: #828282;  
+}
+
+.foto-glav button{
+ width: unset;
+}
+
+.foto-details{
+    font-size: 16px;
+}
+
+.product{
+margin: 24px 0px 120px;
+display: flex;
+gap: 32px;
+}
+
+footer{
+    border-top: 1px solid #E6E6E6;
+    display: flex;
+    justify-content: space-between;
+padding-top: 48px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 32px;
+}
+
+.footer-links-list{
+display: flex;
+flex-direction: column;
+gap: 24px;
+width: 167px;
+}
+
+.footer-links-list a, .footer-links-list h3{
+    font-weight: 500;
+    line-height: 150%;
+    color: #454545;
+    text-decoration: none;
+}
+
+.footer-links-list h3{
+    color: #000;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 24 px;
+}
+.social-media img:hover {
+    filter: brightness(50%);
+}
