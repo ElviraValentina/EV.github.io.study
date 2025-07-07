@@ -59,7 +59,7 @@ margin: 0 auto;
 }
 .hero{
     height: 980px;
-    background: url(hero.png);
+    background: url(4-hero.png);
     background-size: cover;
     display: flex;
     align-items: end;
