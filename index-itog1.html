@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоговая (зачетная) практическая работа по курсу "Web-програмист: с нуля до первых проектов".</title>.</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+     crossorigin="anonymous">
+                                    <!-- стили для карусели-->
+                                    <style>
+                                    #carouselExample{
+                                    box-shadow: 0px 0px 5px black;
+                                    }
+                                      /*растянем фото в каруселе и подстрои их под размеры экрана через cover*/
+                                  .carousel-item img{
+                                    height: 500;
+                                    object-fit: cover;
+                                    object-position: center;
+                                  } 
+                                  h2{
+                                    margin: 20px;
+                                    color: #0618de;
+                                  }
+                                  .overlay{
+                                position: absolute;
+                                min-height: 100%;
+                                min-width: 100%;
+                                left: 0;
+                                top: 0;
+                                background: rgba(244, 244, 244, 0.79);
+                                }
+                                </style>
+
+     <link rel="stylesheet" href="style-itog.css">
+
+     <a href="task.html"><u>Перейти на главную страницу</u></a> 
+
+<nav class="navbar navbar-expand-lg fixed-top ">
+   <a class="navbar-brand" href="#"><p>ГАУЗ Калужской области<br> «Калужский санаторий «Звездный»</p></a>
+    <img src="1logotip.png" class="logotip" alt="...">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+     <ul class="navbar-nav mr-4">
+
+       <!-- кнопка "комплекс услуг" в навигационном меню без подключения:-->
+       <!--<li class="nav-item">
+         <a class="nav-link" href="#">▍Комплекс услуг</a>
+       </li>-->
+        <!-- кнопка "комплекс услуг" в навигационном меню c подключением:-->
+        <li class="nav-item">
+         <a class="nav-link" data-value="about" href="#">▍Комплекс услуг</a>
+        </li>
+
+
+       <li class="nav-item">
+         <a class="nav-link " href="#">▍Номера для гостей</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " href="#">▍Фото</a>
+       </li>
+
+       <!-- кнопка "местоположение" в навигационном меню без подключения:-->
+               <!--<li class="nav-item">
+         <a class="nav-link " href="#">▍Местоположение</a>
+       </li>-->
+        <!-- кнопка "Местоположение" в навигационном меню c подключением:-->
+       <div class="portfolio" id="portfolio"> </div>
+        <li class="nav-item">
+         <a class="nav-link " data-value="portfolio" href="#"> ▍Местоположение</a>
+       </li>
+      
+
+
+       <li class="nav-item">
+         <a class="nav-link " href="#">▍Сообщения</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " href="#">▍Контакты</a>
+       </li>
+     </ul>
+     
+    </div>
+</nav>
+</head>
+
+<body>
+
+<header class="header">
+  <!--<div class="overlay"-->
+  <!--div class="container"-->
+    
+  <!--<div class="description text-center">
+
+   <h3><font color="#fff">▍
+    Современный лечебно-оздоровительный комплекс
+    <p>ГАУЗ Калужской области «Калужский санаторий «Звездный»</p>
+    <p><h6>Санаторий располагается в лесном массиве, в 12 км от города Калуги. Чистейший воздух, здоровая экология, река в шаговой доступности от комплекса — все это позволит Вам отстраниться от городской суеты и темпа повседневности, стать чуть ближе к природе, проникнуться атмосферой гармонии и безмятежности.</h6></p>
+    <button class="btn btn-outline-secondary">Все услуги и их стоимость доступны ВКонтакте при переходе по ссылке https://vk.com/zvezdnyikaluga </button>
+ вот такая ссылка-кнопка не работает:
+    <button onclick="window.location.href = 'https://vk.com/uslugi-210493442?screen=group';">Переход по ссылке</button>   
+   
+  </div>
+  </div>
+</div> 
+-->
+<div>
+<p align="center"><h4><font color="#fff">▍Современный лечебно-оздоровительный комплекс «Калужский санаторий "Звездный" располагается в лесном массиве, в 12 км от города Калуги. Чистейший воздух, здоровая экология, река в шаговой доступности от комплекса — все это позволит Вам отстраниться от городской суеты и темпа повседневности, стать чуть ближе к природе,
+       проникнуться атмосферой гармонии и безмятежности.</font></h4></p>
+</div>      
+
+</header>
+
+<main>
+
+<div style="text-align:center">
+<a href="https://vk.com/zvezdnyikaluga" class="button-style">Все услуги</a>
+
+</div> 
+  
+<!-- nav-link -->
+<div class="about">
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="1bassein1.webp" class="img-fluid">
+   <span class="text-justify"><h4>Бассейн</h4></span>
+
+    <img align="center" src="1ingaljats.webp" class="img-fluid">
+    <span class="text-justify"><h4>Ингаляции</h4></span>
+
+     <img align="center" src="1mineralVoda.webp" class="img-fluid">
+    <span class="text-justify"><h4>Фито-бар <br>для приёма минеральной воды, <br>фито-чая и кислородных коктейлей</h4></span>
+    
+    <img align="center" src="1vanna1.webp" class="img-fluid">
+    <span class="text-justify"><h4>Ванны</h4></span>
+
+    <img align="center" src="1soljanaja_peschera.webp" class="img-fluid">
+    <span class="text-justify"><h4>Соляная комната</h4></span>
+   
+   </div>
+   <div class="col-lg-8 col-md-8 col-sm-12 desc"> 
+    <h2><font color="#0618de">▍Основные профили лечения:</font></h2>
+    <p><h2> Органы дыхания 
+      <br>Заболевания эндокринной системы 
+      <br>Органы пищеварения 
+      <br>Нервная система 
+      <br>Почки и урология 
+      <br>Опорно-двигательный аппарат
+    </h2></p>
+
+    <h2><font color="#0618de">▍Способы лечения и оздоровления:</font></h2>
+    <p><h4> <br>Ароматические ванны 
+    <br>Аэровоздействие 
+    <br>Бишофитотерапия 
+    <br>Ванны газовые 
+    <br>Воздействие коротким ультрафиолетовым излучением (КУФ) 
+    <br>Воздействие магнитными полями (магнитотерапия)
+    <br>Воздействие низкоинтенсивным лазерным излучением 
+    <br>Воздействие электрическим полем УВЧ (э.п. УВЧ) 
+    <br>Гальвановоздействие 
+    <br>Грязелечение 
+    <br>Душ Шарко 
+    <br>Ингаляции 
+    <br>КВЧ-терапия 
+    <br>Климатолечение 
+    <br>Лекарственные ванны 
+    <br>Лекарственный ультрафонофорез 
+    <br>Лечебная физкультура (ЛФК) при различных заболеваниях 
+    <br>Лечение с помощью лучевого (звукового, светового, ультрафиолетового, лазерного) воздействия
+    <br>Массаж при различных заболеваниях 
+    <br>Методы электромагнитного лечебного воздействия на органы и ткани 
+    <br>Озокеритотерапия 
+    <br>Оксигеновоздействие 
+    <br>Парафинотерапия 
+    <br>Подводный душ-массаж 
+    <br>Прием минеральной воды 
+    <br>Синусоидальные модулированные токи 
+    <br>Спелеовоздействие 
+    <br>Галотерапия 
+    <br>Терренкур 
+    <br>Ультразвук при болезнях верхних дыхательных путей 
+    <br>Ультразвук при болезнях суставов 
+    <br>Ультразвуковая терапия 
+    <br>Физиотерапия 
+    <br>Электросон 
+    <br>Электрофорез лекарственный 
+    </h4></p>
+    </div>
+</div>
+
+
+<!-- номера для гостей-->
+<div class="portfolio">
+     <h2 class="text-center">▍Номера для гостей</h2>
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    
+    <img align="center" src="1nomer1.webp"  class="img-fluid zoom-effect" alt="Увеличивающееся изображение">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="1nomer2.webp" class="img-fluid zoom-effect" alt="Увеличивающееся изображение">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="1nomer3.webp" class="img-fluid zoom-effect" alt="Увеличивающееся изображение">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="1nomer4.webp" class="img-fluid zoom-effect" alt="Увеличивающееся изображение">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="1nomer5.webp" class="img-fluid zoom-effect" alt="Увеличивающееся изображение">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="1foie3.webp" class="img-fluid zoom-effect" alt="Увеличивающееся изображение">
+    
+   </div>
+  </div>
+ </div>
+</div>
+
+
+<!-- Фото санатория в лесном массиве Калужской области-->
+<div>
+<h2 class="text-center">▍Фото санатория <br>в лесном массиве <br>Калужской области</h2>
+<section class="hero">
+<div class="container">
+    
+            
+                            <div id="carouselExample" class="carousel slide p-4 rounded-3">
+                                <div class="carousel-inner rounded-5">
+                                <div class="carousel-item active">
+                                <img src="1-1.webp" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="1-3.webp" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="1-4.webp" class="d-block w-100" alt="...">
+                                </div>
+                                 <div class="carousel-item">
+                                <img src="1-5.webp" class="d-block w-100" alt="...">
+                                </div>
+                                 <div class="carousel-item">
+                                <img src="1-8.webp" class="d-block w-100" alt="...">
+                                </div>
+                                 <div class="carousel-item">
+                                <img src="1-9.webp" class="d-block w-100" alt="...">
+                                </div>
+                                 <div class="carousel-item">
+                                <img src="1-10.webp" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="1-12.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                            </div>
+</div>
+</section> 
+
+
+<!-- раздел "Местоположение" -->
+<section>
+<div class="portfolio">
+<h2 class="text-center">▍Местоположение</h2>
+<script type="text/javascript" charset="utf-8" 
+async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea61f26eecbb9bf508b26ae7d71f6f1a4a68deb4528691a976fbeb38d4beb51c&amp;
+width=2100&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+</section>
+
+<!-- раздел "Сообщение" -->
+<section class="container">
+<div class="contact-form">
+ <div class="container">
+  <form>
+   <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h2>▍Сообщение</h2> 
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12 right">
+       <div class="form-group">
+         <input type="text" class="form-control form-control-lg" placeholder="Ваше имя:" name="">
+       </div>
+       <div class="form-group">
+         <input type="email" class="form-control form-control-lg" placeholder="Ваша электронная почта Email@email.com" name="email">
+       </div>
+       <div class="form-group">
+         <textarea class="form-control form-control-lg">
+          
+         </textarea>
+       </div>
+       <input type="submit" class="btn btn-secondary btn-block" value="Отправить" name="">
+    </div>
+   </div>
+  </form>
+ </div>
+</div>
+</section>
+
+</main>
+<footer>
+
+
+
+<!-- Подвал сайта-->
+ <section class="footer-body">
+        <h4>Государственное автономное учреждение здравоохранения<br> Калужской области <br>"Калужский санаторий "Звездный"</h4>
+        <div class="footer-body-links">
+            <ul>
+                <h4>Юридический адрес:</h4>
+                 <p>индекс 248912</p>
+                <p>городской округ Калуга</p>
+                 <p>деревня Андреевское</p>
+            </ul>
+            <ul>
+                <h4>Сайт:</h4>
+                <p>Услуги санатория <br>"Калужский санаторий "Звездный"<br>более подробно представлены на сайте</p>
+                <p>https://санаторий-звездный.рф/</p>
+                 <p>Перейти на сайт:   <a href="https://санаторий-звездный.рф/">https://санаторий-звездный.рф/</a></p>
+             </ul>
+            <ul>
+                <h4>Электронная почта:</h4>
+                <p>zvezdnyi_kaluga@mail.ru</p>
+             </ul>
+             <ul>
+                <h4>Бронирование:</h4>
+                <p>Информацию можно получить по телефону 8(4842)509328.</p>
+                <p> Позвонить:  <a href="tel:8(4842)509328">Телефон: 8(4842)509328</a></p>
+              </ul>   
+        </div>
+  </section>
+
+    <div class="footer-social-media">
+        <a href="https://t.me/sanatostellar"> <img src="1_telegram_icon.png" alt=""></a>
+         <a href="https://vk.com/zvezdnyikaluga"> <img src="1_vkontakte_icon.png" alt=""></a>
+    </div>
+<!--<a href="https://t.me/EVShchurova">Ссылка на мой Telegram-канал.</a>-->
+    
+
+    <p class="pravo"> Все права защищены.</p>
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src='script-itog.js'></script>
+
+</body>
+</html>
+
+
+
+
