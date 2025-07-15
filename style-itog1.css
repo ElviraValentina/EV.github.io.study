@@ -1,0 +1,275 @@
+
+/*импорта шрифта Raleway*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+html,h1,h2,h3,h4,h5,h6,a{
+ font-family: "Raleway";
+}
+/*прокрутка страницы при нажатии на ссылки навигационной панели - сбростла настройки стилей!!*/
+/*$(".navbar a").click(function(){
+  $("body,html").animate({
+   scrollTop:$("#" + $(this).data('value')).offset().top
+  },1000)*/
+
+/*стиль головы сайта - настройка навигационной панели*/
+.navbar{
+ background:#0ac06e;
+}
+.nav-link , .navbar-brand{
+ color: #0618de;
+ cursor: pointer;
+}
+.nav-link{
+ margin-right: 1em !important;
+}
+.nav-link:hover{
+ background: #f4f4f4;
+ color: #0618de;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+.logotip{
+ position: static; 
+}
+/*фон секции в шапке- не работает, т.е. уходит на задний планс текстом*/
+/*.header{
+    background-image: url(1-6.webp);
+ /* background-attachment: fixed
+ background-size: cover;
+ background-position: center;
+}*/
+
+
+/*не работает*/
+/*.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.5);
+}*/
+
+
+
+/*эта настройка удаляет шапку и надпись уходит ниже карусели*/
+/*.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h3{
+ color:#fff ;
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+.description button{
+ border:2px  solid #0000;
+ background:#0618de;
+ color:#fff;
+}*/
+.header div{
+  display: flex;
+  align-items: flex-end;
+  height: 500px;
+    background: url(1-6.webp);
+   
+ /* background-attachment: fixed*/
+ background-size: cover;
+ background-position: center;
+}
+
+.h4 header{
+margin: 120px 20px 10px 10px;
+text-align: center;
+line-height: 3
+}
+
+ /*ссылка-кнопка "Все услуги (их стоимость)"на сайт ВКонтакте https://vk.com/zvezdnyikaluga*/
+.text-align, .button-style {  
+    display: block; 
+    justify-content: center; 
+  margin: 10px 10px 500px 500px; 
+padding: 10px 10px 10px 10px;
+    background: #0618de;  
+    border: 2px solid #0618de; 
+    border-radius: 4px; 
+    color: #fffe;  
+    text-align: center;  
+}  
+.button-style:hover, .button-style:focus {  
+    background: #0ac06e;  
+   }  
+
+
+h3{
+ color:#fff;
+ font-size: 60px;
+ width: 100%;
+ line-height: 1.2;
+}
+
+.description button{
+ border:#fff 2px solid;
+ background:#0618de;
+ color:#fff;
+}
+
+/*main -описание услуг*/
+.about{
+ margin: 10px;
+ padding: 50px;
+ position: relative;
+ display: flex;
+}
+.about h4{
+ color:#000;
+ margin: 2px;
+}
+.about img{
+ height: 20%;
+width: 60%;
+border-radius: 5%;
+margin: 10px;
+}
+.about span{
+ color: #888;
+ position: absolute;
+ left: 100px;
+}
+.about .desc{
+ padding: 1em;
+ border-left:4px solid #10828C;
+}
+/*.about .desc h2{
+ color: #10828C;
+}*/
+.about .desc h4{
+ color: #0ac06e;
+}
+.about .desc p{
+ line-height:2;
+ color:#888;
+}*/
+
+
+
+
+
+/*номера для гостей  -Portfolio*/
+.portfolio{
+ margin: 5em 0;
+    position: relative; 
+}
+.portfolio h2{
+ color:#0618de;
+ margin: 2em; 
+}
+.portfolio img{
+  height: 20rem;
+  width: 100%;
+  margin: 1em;
+  border-radius: 5%;
+}
+.zoom-effect {
+  transition: transform 0.2s;
+}
+.zoom-effect:hover {
+  transform: scale(2);
+}
+
+/*стиль для раздела "Сообщение"*/
+
+.contact-form{
+ margin:  0 auto;
+ display: flex;
+ justify-content: center;
+ position: relative;  
+}
+.contact-form h1{
+ padding:2em 1px;
+ color: #363331; 
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background:  #0618de;
+ color: #fff;
+ border: 3px;;
+}
+.contact-form .right .form-control::placeholder{
+ color: #000;
+ font-size: 20px;
+}
+
+/*подвал сайта*/
+footer{
+    background: #0ac06e;
+    padding: 60px;
+    margin: 0 auto;
+}
+.footer-body{
+    max-width: max-content;
+    margin: 0 auto;
+    color: white;
+}
+.footer-body h4{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.footer-body-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0px 30px;
+}
+.footer-body-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-body-links a{
+font-weight: 100;
+color: white;
+}
+.footer-body-links h4{
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+}
+.footer-social-media{
+    display: flex;
+    align-items: center;
+    row-gap: 15px;
+    margin: 20px 20px;
+}
+.footer-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    border-top: 2px solid white;
+    padding: 15px 0px 32px;
+}
+
+
+.pravo{
+ font-weight: 400;  
+ opacity: 0.7;
+ color: white; 
+}
+
+
