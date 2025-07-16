@@ -1,7 +1,8 @@
 /*импорта шрифта Raleway*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-html,h1,h2,h3,h4,h5,h6,a{
+html, h1, h2, h3, h4, h5, h6, a{
  font-family: "Raleway";
+
 }
 /* Базовые стили */
 :root {
@@ -14,7 +15,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     --text-color: #333333;
     --gray-color: #999999;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --transition: all 0.5s ease;
 }
 
 * {
@@ -31,7 +32,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
+   /* font-family: 'Playfair Display', serif;*/
     font-weight: 700;
 }
 
@@ -64,17 +65,17 @@ ul {
     text-align: center;
     cursor: pointer;
     transition: var(--transition);
-    border: none;
-    font-size: 1rem;
+    border: black;
+    font-size: 2rem;
 }
 
 .btn--primary {
-    background-color: var(--primary-color);
+    background-color: #0618de;
     color: var(--white-color);
 }
 
 .btn--primary:hover {
-    background-color: #5a3d2c;
+    background-color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow);
 }
@@ -86,7 +87,7 @@ ul {
 }
 
 .btn--outline:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(8, 43, 150, 0.1);
     transform: translateY(-2px);
 }
 
@@ -94,7 +95,7 @@ ul {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: var(--dark-color);
+    color: var(--primary-color);
     position: relative;
     padding-bottom: 15px;
 }
@@ -219,19 +220,10 @@ ul {
 }
 
 /*ссылка-кнопка "стоимость услуги"- переход на другой файл*/
-/*.text-align, .button-style {  
-    display: block; 
-    justify-content: center; 
-  margin: 10px 10px 500px 500px; 
-padding: 10px 10px 10px 10px;
-    background: #0618de;  
-    border: 2px solid #0618de; 
-    border-radius: 4px; 
-    color: #fffe;  
-    text-align: center;  
-}  */
+
+
 .btn--primary:hover, .btn--primary:focus {  
-    background: #0ac06e;  
+    background: #0a1cc0;  
    }  
 
 /* О нас */
@@ -250,21 +242,24 @@ padding: 10px 10px 10px 10px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
+     margin: 10px;
 }
 
 .about__image img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     transition: var(--transition);
+    
 }
 
 .about__image:hover img {
-    transform: scale(1.05);
+    transform: scale(1.25);
+    transition: transform 0.5s;
 }
 
 .about__text {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about__features {
@@ -306,7 +301,7 @@ padding: 10px 10px 10px 10px;
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
-    color: var(--gray-color);
+    color: white 
 }
 
 .tab-btn.active {
@@ -350,15 +345,7 @@ padding: 10px 10px 10px 10px;
     margin-bottom: 10px;
 }
 
-.menu-item__title {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-}
 
-.menu-item__price {
-    font-weight: 700;
-    color: var(--dark-color);
-}
 
 .menu-item__description {
     color: var(--gray-color);
@@ -372,69 +359,18 @@ padding: 10px 10px 10px 10px;
   transform: scale(2);
 }
 
-/* Отзывы */
+
+
+/* Контакты и сообщения */
 .reviews {
     padding: 80px 0;
-    background-color: var(--light-color);
-}
-
-.reviews__slider {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.review {
-    background-color: var(--white-color);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-.review:hover {
-    transform: translateY(-5px);
-}
-
-.review__rating {
-    color: #FFD700;
-    margin-bottom: 15px;
-}
-
-.review__text {
-    font-style: italic;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.review__text::before {
-    content: '"';
-    font-size: 3rem;
-    color: var(--secondary-color);
-    position: absolute;
-    top: -20px;
-    left: -10px;
-    opacity: 0.3;
-}
-
-.review__author {
+    background-color: var(--gray-color);
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
-.review__photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 15px;
-}
 
-.review__name {
-    font-weight: 600;
-}
-
-/* Контакты */
 .contacts {
     padding: 80px 0;
 }
@@ -490,10 +426,35 @@ padding: 10px 10px 10px 10px;
     transform: translateY(-3px);
 }
 
+/*стиль для раздела "Сообщение"*/
+
+.contact-form{
+ margin:  0 auto;
+ display: flex;
+ justify-content: center;
+ position: relative;  
+}
+.contact-form h2{
+ padding:2em 1px;
+ color: #0618de; 
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background:  #0618de;
+ color: #fff;
+ border: 10px;;
+}
+.contact-form .right .form-control::placeholder{
+ color: #000;
+ font-size: 10px;
+}
+
 /* Подвал */
 .footer {
-    background-color: var(--dark-color);
-    color: var(--white-color);
+    background-color: var(--primary-color-hover);
+    color: var(--primary-color);
     padding: 60px 0 20px;
 }
 
